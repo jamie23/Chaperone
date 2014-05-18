@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+	android:background="@drawable/greengradient">
+	
+	
+    <TextView android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_app" 
+        android:layout_centerHorizontal="true" 
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" 
+    />
+    
+     <LinearLayout
+ 		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+		android:paddingTop="80dp">
+        
+        <TextView
+            android:layout_weight="1"
+			android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/activity_start_title"
+	        android:textSize="20sp"
+	        android:textColor="#FFFFFF"
+   		/>
+        
+        <!--Might be worth looking at putting a spinner here instead of a simple input box-->
+        
+        <EditText android:id="@+id/start_text"
+      		android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	      	android:hint="@string/activity_settings_startValue" 
+	      	android:textColor="#FFFFFF"
+   		/>
+     </LinearLayout>
+    
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+		android:paddingTop="120dp">
+        
+    	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/activity_destination_place" 
+	        android:textSize="20sp"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+   		/>
+    	
+    	<EditText android:id="@+id/destination_text"
+      		android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	      	android:hint="@string/activity_settings_destValue" 
+	        android:textColor="#FFFFFF"
+   		/>
+    	
+	</LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+		android:paddingTop="160dp">
+        
+    	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/activity_settings_timeDest" 
+	        android:textSize="20sp"
+	        android:textColor="#FFFFFF"
+			android:layout_weight="1"
+	        
+   		/>
+    	
+    	<EditText android:id="@+id/time_text"
+      		android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	      	android:hint="@string/activity_settings_timeDestVal" 
+	      	android:inputType="textPassword"
+	        android:textColor="#FFFFFF"
+   		/>
+    	
+	</LinearLayout>
+     
+    <LinearLayout
+		android:layout_width="match_parent"
+	  	android:layout_height="match_parent"
+	    android:layout_marginTop="400dp">
+        
+	    <Button android:id="@+id/btnStartHome"
+            android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_marginBottom="20dp"
+			android:text="@string/activity_settings_submit"
+			android:onClick="openDestination"
+	    />
+	   
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="20dp" 
+			android:text="@string/btn_settings"
+			android:onClick="openSettings"
+	    />
+	</LinearLayout>
+	    
+
+</RelativeLayout>

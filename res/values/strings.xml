@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chaperone</string>
+    
+   <!-- Main screen -->
+    <string name="btn_settings">Settings</string>
+   	<string name="activity_settings_submit">Submit</string>
+    <string name="activity_start_title">Enter starting point</string>
+	<string name="activity_settings_startValue">Quayside</string>      
+	<string name="activity_settings_destValue">Home</string>      
+	<string name="activity_settings_timeDest">Time to destination</string>   
+	<string name="activity_settings_timeDestVal">10</string>     
+	
+	
+   	<!-- Settings screen  -->
+	<string name="activity_settings_time">Minutes before texting</string>      
+	<string name="activity_settings_enter_time">Enter a time</string>        
+	<string name="activity_settings_passphrase">Passphrase</string>  
+	<string name="activity_settings_txtNum">Number to text</string>        
+	<string name="activity_settings_txtNumInput">+44&#8230;</string>    
+	<string name="activity_settings_delete">Clear Settings</string>
+ 
+	<!-- Journey screen -->
+	<string name="activity_destination_start">Starting:</string>
+	<string name="activity_destination_ending">Ending:</string>
+	<string name="activity_destination_timeEstimated">Minutes estimated:</string>
+	<string name="activity_destination_timeRemaining">Current Time:</string>
+	<string name="activity_destination_finished">Finished</string>
+	<string name="activity_destination_enterPassword">Enter Password:</string>
+	
+</resources>
